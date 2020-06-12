@@ -3,6 +3,7 @@
 
 #include "pch.h"
 #include "framework.h"
+#include "chart.h"
 #include "CPUUsage.h"
 
 #ifdef _DEBUG
@@ -34,6 +35,9 @@ int main()
         else
         {
             // TODO: code your application's behavior here.
+			chart *chartdialog = new chart;
+			int ReturnValue = chartdialog->DoModal(); // Show the dialog
+			printf("%d", ReturnValue);
         }
     }
     else
