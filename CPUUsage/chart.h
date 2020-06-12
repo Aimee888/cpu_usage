@@ -3,6 +3,7 @@
 #include "ChartCtrl/ChartTitle.h"
 #include "ChartCtrl/ChartLineSerie.h"
 #include "ChartCtrl/ChartAxisLabel.h"
+#include "CCPUUseRate.h"
 
 // chart dialog
 
@@ -28,7 +29,6 @@ protected:
 	// 生成的消息映射函数
 	virtual BOOL OnInitDialog();
 	afx_msg void OnPaint();
-	afx_msg HCURSOR OnQueryDragIcon();
 	afx_msg void OnSize(UINT nType, int cx, int cy);
 	afx_msg void OnTimer(UINT nIDEvent);
 	DECLARE_MESSAGE_MAP()
@@ -40,4 +40,5 @@ public:
 	void ChartCtrlInit(void);
 	void DataBuffInit(void);
 	void DataShow(double *xb, double *yb, int len);
+	CCPUUseRate cpu1;
 };
