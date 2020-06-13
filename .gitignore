@@ -1,7 +1,5 @@
 # myself
 Debug/
-*.vcxproj
-*.vcxproj.filters
 *.vcxproj.user
 .vs
 # Prerequisites

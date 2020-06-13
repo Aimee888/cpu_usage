@@ -186,7 +186,7 @@ void chart::OnTimer(UINT nIDEvent) {
 		yBuff[index + i] = rate;
 		m_ChartCtrl.GetTitle()->RemoveAll();
 		TCHAR Temp[64] = TEXT("");
-		_stprintf_s(Temp, TEXT("CPU Usage: %2d%%"), rate);
+		_stprintf_s(Temp, TEXT("CPU Usage: %3d%%"), rate);
 		m_ChartCtrl.GetTitle()->AddString(Temp);
 
 		//yd[index + i] = cos((index + i + w)/5) * 50 + 100+rand() / 1000;
